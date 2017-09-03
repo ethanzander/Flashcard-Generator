@@ -1,0 +1,22 @@
+{
+  "name": "flashcard-generator",
+  "version": "1.0.0",
+  "description": "backend for a basic flashcard application",
+  "main": "flashcardMain.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ethanzander/Flashcard-Generator.git"
+  },
+  "author": "Ethan Zander",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ethanzander/Flashcard-Generator/issues"
+  },
+  "homepage": "https://github.com/ethanzander/Flashcard-Generator#readme",
+  "dependencies": {
+    "request": "^2.81.0"
+  }
+}

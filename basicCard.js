@@ -1,13 +1,19 @@
 
+var fs = require("fs");
+var request = require("request");
 
-function BasicCard(front, back) {
+var sideChoice = process.argv[2];
+
+var BasicCard = function(front, back) {
     this.front = front;
     this.back = back;
+    fs.appendFile("log.txt", "\n____________________________\nNew Basic Flashcard:");
+    fs.appendFile("log.txt", "\nFront Side - " + this.front);
+    fs.appendFile("log.txt", "\nBack Side - " + this.back);
 }
 var firstPresident = new BasicCard("Who was the first president of the United States?", "George Washington");
 
-function showSide() {
-    var sideChoice = process.argv[2];
+function showSide(sideChoices) {
     if (sideChoice === front) {
         console.log(BasicCard.front);
     }
